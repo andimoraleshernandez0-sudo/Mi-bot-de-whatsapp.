@@ -1,0 +1,29 @@
+{
+  "activado": true,
+  "responderEnGrupos": false,
+  "tiempoEsperaEntreMensajesSegundos": 10,
+  "mensajePorDefectoActivo": false,
+  "mensajePorDefecto": "Gracias por tu mensaje. En este momento no estoy disponible, responderé pronto. Si necesitas información escribe *menu*.",
+  "reglas": [
+    {
+      "palabrasClave": ["hola", "buenas", "buenos dias", "buenas tardes", "buenas noches", "hey", "saludos"],
+      "respuesta": "¡Hola! 👋 Gracias por comunicarte. Escribe *menu* para ver las opciones disponibles."
+    },
+    {
+      "palabrasClave": ["menu", "!menu", "opciones", "ayuda", "!ayuda"],
+      "respuesta": "📋 *MENÚ PRINCIPAL*\n\n1️⃣ Escribe *juegos* para ver recomendaciones de audiojuegos.\n2️⃣ Escribe *horarios* para consultar nuestro horario.\n3️⃣ Escribe *contacto* para solicitar que te atienda una persona.\n\n_Escribe cualquiera de las opciones para recibir información._"
+    },
+    {
+      "palabrasClave": ["juegos", "audiojuegos", "!juegos"],
+      "respuesta": "🎮 *Lista de juegos accesibles recomendados:*\n\n• *Glory Frontline:* Shooter multijugador estilo Free Fire.\n• *Arena de Fuego:* Battle Royale en Android.\n• *Zero Hour Assault:* Shooter táctico con paracaídas.\n• *Crazy Party:* Más de 300 minijuegos multijugador para PC."
+    },
+    {
+      "palabrasClave": ["horarios", "horario"],
+      "respuesta": "⏰ *Horarios de atención:*\nLunes a Sábado de 9:00 AM a 7:00 PM."
+    },
+    {
+      "palabrasClave": ["contacto", "asesor", "humano", "persona"],
+      "respuesta": "👤 He registrado tu solicitud. La persona a cargo te responderá en cuanto esté libre."
+    }
+  ]
+}
